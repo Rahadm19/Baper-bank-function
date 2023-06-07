@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl  font-medium text-center mt-6"> Account
+            <span class="font-extrabold">Dashboard</span>
+        </h1>
+
+        <p id="insufficiant"></p>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-7/12 mx-auto text-neutral-50">
+                <div class="balance bg-lime-600 p-5 rounded-xl">
+                    <h3 class="font-semibold">Deposite</h3>
+                    <h1 class="text-3xl">$<span id="deposti-display">00</span></h1>
+                </div>
+                <div class="balance bg-red-500 p-5 rounded-xl">
+                    <h3 class="font-semibold">Withdraw</h3>
+                    <h1 class="text-3xl">$<span id="withdraw-display">00</span></h1>
+                </div>
+                <div class="balance bg-emerald-500 p-5 rounded-xl">
+                    <h3 class="font-semibold">Balance</h3>
+                    <h1 class="text-3xl">$<span id="balance-display">1000</span></h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-5 w-7/12 mx-auto mt-5">
+                <div class="balance bg-emerald-500 p-5 rounded-xl">
+                    <h3 class="font-semibold">Deposite</h3>
+                    <input class="p-2 w-50 rounded" type="text" name="" id="deposit-input"><br>
+                    <button class="rounded bg-green-400 p-2 btn font-bold mt-2" id="deposit-btn">Deposite</button>
+                </div>
+                <div class="balance bg-red-500 p-5 rounded-xl">
+                    <h3 class="font-semibold">Withdraw</h3>
+                    <input class="p-2 w-50 rounded" type="text" name="" id="withdraw-input"><br>
+                    <button class="rounded bg-green-400 p-2 btn font-bold mt-2" id="withdraw-btn">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bap-er-bank-function.js"></script>
+</body>
+
+</html>
