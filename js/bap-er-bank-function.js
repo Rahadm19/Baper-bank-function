@@ -20,11 +20,17 @@ document.getElementById("deposit-btn").addEventListener('click', function () {
     const balanceDisplayString = balanceDisplay.innerText;
     const balanceDisplayValue = parseFloat(balanceDisplayString);
 
-    const newDepositeTotal = depositeFieldValue + depositDisplayValue;
-    depositeDisplay.innerText = newDepositeTotal;
+    if (isNaN(depositeFieldString)) {
+        alert("Please Enter a valid number")
+    }
 
-    const newBalanceDisplay = depositeFieldValue + balanceDisplayValue;
-    balanceDisplay.innerText = newBalanceDisplay;
+    else {
+        const newDepositeTotal = depositeFieldValue + depositDisplayValue;
+        depositeDisplay.innerText = newDepositeTotal;
+
+        const newBalanceDisplay = depositeFieldValue + balanceDisplayValue;
+        balanceDisplay.innerText = newBalanceDisplay;
+    }
 
 
 
